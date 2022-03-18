@@ -1,6 +1,6 @@
-package Tests;
+package tests;
 
-import Core.BaseTest;
+import core.Base;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import org.junit.Test;
@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import static com.codeborne.selenide.Selenide.$$x;
 
-public class WikiTest extends BaseTest {
+public class WikiTest extends Base {
     private final static String URL = "https://ru.wikipedia.org/wiki/Java";
 
     @Test

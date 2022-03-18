@@ -1,13 +1,13 @@
-package Core;
+package core;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
 
-abstract public class BaseTest {
+abstract public class Base {
     /**
-     * Инициализация Selenide с настройками
+     * Selenide initialization with settings
      */
     public void setUp(){
         WebDriverManager.chromedriver().setup();
@@ -18,7 +18,7 @@ abstract public class BaseTest {
     }
 
     /**
-     * Выполнение метода перед каждым запуском
+     * Executing the method before each startup
      */
     @Before
     public void init(){
@@ -26,7 +26,7 @@ abstract public class BaseTest {
     }
 
     /**
-     * Выполнение метода после каждого закрытия тестов
+     * Execution of the method after each test closure
      */
     @After
     public void tearDown(){
